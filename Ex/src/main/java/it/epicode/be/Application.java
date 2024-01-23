@@ -19,15 +19,6 @@ public class Application {
 
         EventoDAO ed = new EventoDAO(em);
 
-//        Student aldo = new Student("Aldo", "Baglio", StudentType.BACKEND);
-//        Student giovanni = new Student("Giovanni", "Rossi", StudentType.FRONTEND);
-//        Student giacomo = new Student("Giacomo", "Bianchi", StudentType.FULLSTACK);
-
-//        sd.save(aldo);
-//        sd.save(giovanni);
-//        sd.save(giacomo);
-//        sd.findByIdAndDelete(2);
-
         Evento beatles = new Evento("Beatles", "25/01/24", "Concerto", tipoEvento.PUBBLICO, 100);
 
         ed.save(beatles);
